@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Sinha | Data Analyst & AI Practitioner</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        
+        body { background-color: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+
+        /* Container */
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+        /* Navigation */
+        nav { padding: 20px 0; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+        .nav-links a { margin-left: 20px; color: var(--text-secondary); font-size: 0.9rem; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero Section */
+        .hero { padding: 100px 0; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 30px; }
+        .hero .highlight { color: var(--accent); }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent);
+            color: #000;
+            font-weight: 600;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover { background-color: var(--accent-hover); }
+
+        /* Section Titles */
+        .section-title { font-size: 1.8rem; margin-bottom: 30px; border-left: 4px solid var(--accent); padding-left: 15px; }
+
+        /* Tech Stack Grid */
+        .skills { padding: 50px 0; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; }
+        .skill-card {
+            background: var(--card-bg);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+        .skill-card h3 { font-size: 1rem; color: var(--text-secondary); }
+
+        /* Projects Section */
+        .projects { padding: 50px 0; }
+        .project-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #334155;
+            transition: transform 0.2s;
+        }
+        .project-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .project-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 15px; }
+        .project-title { font-size: 1.4rem; font-weight: 600; color: var(--text-primary); }
+        .project-tech { font-size: 0.85rem; color: var(--accent); font-family: monospace; }
+        .project-desc { color: var(--text-secondary); margin-bottom: 20px; }
+        .project-metrics { display: flex; gap: 15px; }
+        .metric { background: #0f172a; padding: 5px 12px; border-radius: 4px; font-size: 0.8rem; color: #cbd5e1; }
+
+        /* Contact */
+        .contact { padding: 80px 0; text-align: center; }
+        .contact-links { display: flex; justify-content: center; gap: 30px; margin-top: 20px; }
+        .contact-links a { font-size: 1.2rem; border-bottom: 2px solid var(--accent); }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px 0; color: var(--text-secondary); font-size: 0.9rem; border-top: 1px solid #334155; margin-top: 50px;}
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .project-header { flex-direction: column; gap: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">Krishna.Data</div>
+            <div class="nav-links">
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <h1>Hi, I'm <span class="highlight">Krishna Sinha</span></h1>
+            <p>A Data Analyst & AI Practitioner transforming raw data into strategic business insights using <b>SQL, Python & GenAI</b>.</p>
+            <a href="mailto:krishnas9920@gmail.com" class="btn">Hire Me</a>
+            <a href="https://github.com/Krishnasinha07x" target="_blank" style="margin-left: 20px; color: var(--accent); font-weight: 600;">View GitHub →</a>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="section-title">Technical Proficiency</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><h3>Python (Pandas)</h3></div>
+                <div class="skill-card"><h3>Advanced SQL</h3></div>
+                <div class="skill-card"><h3>Machine Learning</h3></div>
+                <div class="skill-card"><h3>RAG / GenAI</h3></div>
+                <div class="skill-card"><h3>Streamlit</h3></div>
+                <div class="skill-card"><h3>Power BI</h3></div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">🧠 RAG Pipeline: Amazon Insights</div>
+                    <div class="project-tech">Python • LangChain • Gemini • Vector DB</div>
+                </div>
+                <p class="project-desc">
+                    Addressed the challenge of analyzing unstructured customer reviews. Built an automated pipeline using Vector Embeddings to semantically search and summarize customer pain points, replacing hours of manual reading with instant queries.
+                </p>
+                <div class="project-metrics">
+                    <span class="metric">Reduced Analysis Time by 90%</span>
+                    <span class="metric">Eliminated Hallucinations</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">📉 Customer Churn Predictor</div>
+                    <div class="project-tech">Logistic Regression • Scikit-Learn • Streamlit</div>
+                </div>
+                <p class="project-desc">
+                    Developed a risk-scoring engine for a travel agency to identify customers likely to leave. Chose Logistic Regression for high interpretability, allowing the business team to understand <i>why</i> users churn (e.g., Frequent Flyers).
+                </p>
+                <div class="project-metrics">
+                    <span class="metric">73% Recall on High-Risk Users</span>
+                    <span class="metric">Addressed Class Imbalance</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">👁️ DeepFake Detection System</div>
+                    <div class="project-tech">Deep Learning • CNN • TensorFlow</div>
+                </div>
+                <p class="project-desc">
+                    An academic research project focused on digital integrity. Built a Convolutional Neural Network (CNN) to detect pixel-level artifacts in manipulated media, distinguishing between real and fake imagery with high accuracy.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Ready to solve business problems?</h2>
+            <p style="color: var(--text-secondary); margin-top: 10px;">I am available for Data Analyst & Consultant roles.</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/krishna-sinha-07x/" target="_blank">LinkedIn</a>
+                <a href="mailto:krishnas9920@gmail.com">Email</a>
+                <a href="https://github.com/Krishnasinha07x" target="_blank">GitHub</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Krishna Sinha. Built for Business Intelligence.</p>
+    </footer>
+
+</body>
+</html>
